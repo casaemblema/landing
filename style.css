@@ -45,7 +45,17 @@ form .btn{grid-column:1/-1;justify-self:flex-start}
 .footer small{color:var(--muted)}
 .hr{height:1px;background:var(--border);margin:24px 0}
 .tagline{color:#d9d9d9;opacity:.9}
-.logo-big{display:block;width:120px;height:auto;filter:drop-shadow(0 0 0 rgba(0,0,0,0));}
+.logo-big {
+  display: block;
+  width: 220px;        /* antes 120px */
+  height: auto;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.3));
+  border-radius: 12px; /* opcional, le da suavidad */
+  transition: transform 0.3s ease;
+}
+.logo-big:hover {
+  transform: scale(1.04); /* sutil efecto al pasar el mouse */
+}
 @media (max-width: 920px){
   .hero{grid-template-columns:1fr;gap:24px}
   .cards{grid-template-columns:1fr}
