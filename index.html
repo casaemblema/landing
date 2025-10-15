@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Emblema — Tu proyecto, nuestro emblema</title>
+  <meta name="description" content="Casa Emblema es una casa productora independiente en Monterrey. Hacemos de tu proyecto un emblema audiovisual: preproducción, producción, postproducción y gestión de contenidos.">
+  <meta property="og:title" content="Casa Emblema — Tu proyecto, nuestro emblema">
+  <meta property="og:description" content="Transformamos tu idea en un emblema audiovisual.">
+  <meta property="og:image" content="assets/logo_casa_emblema.png">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preload" href="assets/logo_casa_emblema.png" as="image">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img class="logo" src="assets/logo_casa_emblema.png" alt="Logo Casa Emblema">
+      <h1>CASA&nbsp;EMBLEMA</h1>
+    </div>
+    <nav class="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Productora audiovisual — Monterrey</span>
+        <h2>Tu proyecto, nuestro emblema.</h2>
+        <p class="tagline">Hacemos de tu proyecto un emblema audiovisual. Desarrollamos, producimos y gestionamos contenido con identidad: podcasts, canales de YouTube y piezas para redes — del concepto al estreno.</p>
+        <div class="cta">
+          <a class="btn" href="#contacto">Inicia tu proyecto</a>
+          <a class="btn secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:center">
+        <img class="logo-big" src="assets/logo_casa_emblema.png" alt="Sello Casa Emblema">
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <h3>Servicios</h3>
+      <div class="cards">
+        <div class="card">
+          <h3>Preproducción</h3>
+          <p>Concepto, guion, planificación técnica, identidad audiovisual y logística.</p>
+        </div>
+        <div class="card">
+          <h3>Producción</h3>
+          <p>Grabación en estudio o locación, audio profesional, cámaras e iluminación.</p>
+        </div>
+        <div class="card">
+          <h3>Postproducción</h3>
+          <p>Edición, mezcla y master de audio, corrección de color, versiones vertical/horizontal.</p>
+        </div>
+        <div class="card">
+          <h3>Gestión de contenido</h3>
+          <p>Publicación, optimización para YouTube, Instagram y TikTok, y calendarios.</p>
+        </div>
+        <div class="card">
+          <h3>Consultoría</h3>
+          <p>Estrategia de canal, branding audiovisual y mejoras de flujo de producción.</p>
+        </div>
+        <div class="card">
+          <h3>Paquetes</h3>
+          <p>Planes por episodio, por temporada o por canal con métricas y reportes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quienes" class="section">
+      <h3>Quiénes somos</h3>
+      <p>Casa Emblema es una casa productora independiente que transforma ideas en emblemas audiovisuales. Unimos técnica, narrativa y estilo para que cada pieza sea reconocible por su calidad y propósito.</p>
+      <div class="kv">
+        <div>
+          <div class="card"><h3>Enfoque</h3><p>Calidad técnica, estética sólida y entrega puntual. Del concepto al estreno.</p></div>
+        </div>
+        <div>
+          <div class="card"><h3>Sedes y formatos</h3><p>Monterrey — estudio y locación. Formatos vertical y horizontal; podcasts, series y campañas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h3>Contacto</h3>
+      <p class="k">Cuéntanos brevemente tu proyecto. Te contactamos en menos de 24 h hábiles.</p>
+      <!-- REEMPLAZA el correo en action por el tuyo. Tip: crea uno tipo hola@casaemblema.com -->
+      <form class="form" action="https://formsubmit.co/REEMPLAZA_TU_CORREO@ejemplo.com" method="POST">
+        <!-- Opciones útiles de FormSubmit -->
+        <input type="hidden" name="_subject" value="Nuevo lead — Casa Emblema">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://casaemblema.github.io/landing/">
+        <input type="text" name="Nombre" placeholder="Nombre completo" required>
+        <input type="tel" name="WhatsApp" placeholder="WhatsApp (opcional)">
+        <input type="email" name="Email" placeholder="Correo electrónico" required>
+        <input type="text" name="Proyecto" placeholder="Tipo de proyecto (podcast, canal, campaña)" required>
+        <textarea name="Mensaje" placeholder="Cuéntanos la idea y objetivo" ></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+      <div class="hr"></div>
+      <p class="k">También puedes escribirnos por DM en Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">CasaEmblema</a></p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="y"></span> Casa Emblema — Monterrey, MX</small>
+    <small>Tu proyecto, nuestro emblema.</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
