@@ -45,17 +45,48 @@ form .btn{grid-column:1/-1;justify-self:flex-start}
 .footer small{color:var(--muted)}
 .hr{height:1px;background:var(--border);margin:24px 0}
 .tagline{color:#d9d9d9;opacity:.9}
+/* =============================
+   LOGO PRINCIPAL (Hero)
+   ============================= */
 .logo-big {
   display: block;
-  width: 220px;        /* antes 120px */
+  width: 320px;         /* antes 120px — ahora más grande */
   height: auto;
-  filter: drop-shadow(0 0 4px rgba(0,0,0,0.3));
-  border-radius: 12px; /* opcional, le da suavidad */
-  transition: transform 0.3s ease;
+  margin-top: 10px;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+  border-radius: 14px;
+  opacity: 0;           /* inicio invisible */
+  transform: translateY(20px);
+  animation: fadeInUp 1.4s ease-out forwards;
 }
+
+/* Efecto hover sutil */
 .logo-big:hover {
-  transform: scale(1.04); /* sutil efecto al pasar el mouse */
+  transform: scale(1.05);
 }
+
+/* =============================
+   EFECTOS DE APARICIÓN
+   ============================= */
+.hero h2,
+.hero p,
+.hero .cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.4s ease-out forwards;
+}
+
+/* Escalonar el orden de aparición */
+.hero h2 { animation-delay: 0.2s; }
+.hero p  { animation-delay: 0.4s; }
+.hero .cta { animation-delay: 0.6s; }
+.logo-big  { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 920px){
   .hero{grid-template-columns:1fr;gap:24px}
   .cards{grid-template-columns:1fr}
